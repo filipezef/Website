@@ -24,3 +24,6 @@ Things you may want to cover:
 * ...
 
 Entering some ramdon text for training purposes
+
+web address with heroku:
+https://aqueous-shelf-51129.herokuapp.com/ 
