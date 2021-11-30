@@ -60,6 +60,12 @@
     <h2>This is my tryout blog, thank you for accessing it!</h2>
     <p>Check out my linkedin account: <a href="https://www.linkedin.com/in/filipezef/">linkedin.com/in/filipezef/</a></p>
     <p>Check out my github repo: <a href="https://github.com/filipezef">github.com/filipezef</a></p>
-    <h3><a href="/about">About</a> <a href="/galheta">Galheta</a></h3>
+    
+    <h3>
+      <%= link_to 'About', about_path %> |
+      <%= link_to 'Galheta', galheta_path %> |
+      <%= link_to 'Articles listing', articles_path %>
+    </h3>
+    
   </body>
 </html>
