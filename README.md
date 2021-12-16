@@ -6,12 +6,11 @@ Dedicaded exclusively to code studying purposes, focusing on back end and front 
 
 App based on Ruby (version 2.7.4.1) and Ruby on Rails (version 6)
 
-Hosted by heroku > https://zeferino-blog.herokuapp.com/
+Hosted by heroku > https://zeferino.herokuapp.com/
 Original link > https://aqueous-shelf-51129.herokuapp.com/
 
-  ========================================
-  Version 1 (released on December 2021)
-  ========================================
+
+Version 1 (released on December 2021)
 
 Updated version after CSS and HTML Shay Howe course attending (https://learn.shayhowe.com/html-css/)
 
