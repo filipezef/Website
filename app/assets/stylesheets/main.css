@@ -369,7 +369,7 @@ p a {
 
 /*
   =============================================
-  HTML & CSS | JS | Python | Rails | Coding
+  About | HTML & CSS | JS | Python | Rails | Coding
   =============================================
 */
 
@@ -407,29 +407,33 @@ p a {
   font-size: 36px;
 }
 
-
 /*
   ========================================
-  Speakers
+  About
   ========================================
 */
   
-.speaker-info {
+.about-info {
   border: 1px solid #dfe2e5;
   border-radius: 5px;
   margin-top: 88px;
   padding-bottom: 22px;
   text-align: center;
 }
-.speaker {
+.about {
   margin-bottom: 44px;
 }
-.speaker-info img {
+.about-info img {
   border-radius: 50%;
   height: 130px;
   margin: -66px 0 22px 0;
   vertical-align: top;
 }
+
+
+
+
+
 
 /*
   ========================================
