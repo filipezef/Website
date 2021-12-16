@@ -10,7 +10,7 @@ Hosted by heroku > https://zeferino.herokuapp.com/
 Original link > https://aqueous-shelf-51129.herokuapp.com/
 
 
-# Version 1 (released on December 2021)
+# Version 1 (released on December 16th 2021)
 
 Updated version after CSS and HTML Shay Howe course attending (https://learn.shayhowe.com/html-css/)
 
