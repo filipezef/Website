@@ -18,7 +18,7 @@ class PagesController < ApplicationController
   def rails
   end
 
-  def miscelaneous
+  def coding
   end
 
 end

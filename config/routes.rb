@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   get 'js', to: 'pages#js'
   get 'python', to: 'pages#python'
   get 'rails', to: 'pages#rails'
-  get 'miscelaneous', to: 'pages#miscelaneous'
+  get 'coding', to: 'pages#coding'
   resources :articles
 end

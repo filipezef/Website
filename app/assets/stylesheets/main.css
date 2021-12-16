@@ -134,12 +134,12 @@ html {
   padding: 66px 0 44px 0;
 }
 .row-alt {
-   background: #cbe2c1;
-   background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
-   background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
-   background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+   background: #4d5153;
+   background: -webkit-linear-gradient(to right, #2e2d35, #646964);
+   background:    -moz-linear-gradient(to right, #2e2d35, #646964);
+   background:         linear-gradient(to right, #2e2d35, #646964);
    padding: 44px 0 22px 0;
- }
+}
 
 /*
   ========================================
@@ -148,7 +148,7 @@ html {
 */
 
 h1, h2, h3, h4 {
-  color: #DCA032;
+  color: #f3a007;
 }
 h1, h3, h4, h5, p {
   margin-bottom: 22px;
@@ -172,6 +172,11 @@ h5 {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
+}
+h6 {
+  color: #a9b2b9;
+  font-size: 16px;
+  font-weight: 300;
 }
 strong {
   font-weight: 400;
@@ -216,11 +221,11 @@ cite, em {
 }
 .btn-alt:hover {
   background: #fff;
-  color: #DCA032;
+  color: #f3a007;
 }
 .btn-default {
   border: 0;
-  background: #DCA032;
+  background: #f3a007;
   padding: 11px 30px;
   font-size: 14px;
 }
@@ -235,8 +240,11 @@ cite, em {
 */
 
 a {
-  color: #DCA032;
+  color: #f3a007;
   text-decoration: none;
+}
+.done {
+  color: #2fac10;
 }
 a:hover {
   color: #a9b2b9;
@@ -248,7 +256,7 @@ p a {
   color: #fff;
 }
 .primary-header a:hover, .primary-footer a:hover {
-  color: #DCA032;
+  color: #f3a007;
 }
 
 /*
@@ -258,7 +266,7 @@ p a {
 */
 
 .logo {
-  border-top: 4px solid #DCA032;
+  border-top: 4px solid #f3a007;
   float: left;
   font-size: 48px;
   font-weight: 100;
@@ -287,7 +295,7 @@ p a {
 */
 
 .primary-footer {
-  color: #DCA032;
+  color: #f3a007;
   font-size: 14px;
   padding-bottom: 44px;
   padding-top: 44px;
@@ -339,7 +347,7 @@ p a {
 .hero {
   color: #fff;
   line-height: 44px;
-  padding: 22px 80px 66px 80px;
+  padding: 22px 80px 50px 80px;
   text-align: center;
 }
 .hero h2 {
@@ -360,28 +368,44 @@ p a {
 }
 
 /*
-  ========================================
-  HTML & CSS
-  ========================================
+  =============================================
+  HTML & CSS | JS | Python | Rails | Coding
+  =============================================
 */
 
 .hero2 {
   color: #fff;
   line-height: 44px;
-  padding: 10px 80px 10px 80px;
+  padding: 32px 80px 10px 80px;
   text-align: center;
 }
 .hero2 h2 {
   font-size: 36px;
 }
+.hero3 {
+  color: #fff;
+  line-height: 44px;
+  padding: 10px 80px 10px 80px;
+  text-align: left;
+}
+.hero3 h2 {
+  font-size: 36px;
+}
 
+/*
+  =============================================
+  Coding
+  =============================================
+*/
 
-
-
-
-
-
-
+.hero4 {
+  color: #fff;
+  padding: 10px 80px 10px 80px;
+  text-align: left;
+}
+.hero4 h2 {
+  font-size: 36px;
+}
 
 
 /*
