@@ -10,7 +10,7 @@ Hosted by heroku > https://zeferino.herokuapp.com/
 Original link > https://aqueous-shelf-51129.herokuapp.com/
 
 
-Version 1 (released on December 2021)
+# Version 1 (released on December 2021)
 
 Updated version after CSS and HTML Shay Howe course attending (https://learn.shayhowe.com/html-css/)
 
@@ -33,9 +33,8 @@ Available pages:
 
 *Articles page related to articles feature (CRUD), to be released on further versions. Improvement on input methods required. Anyone with access to the page without any authentication can play with it at will.
 
-  ========================================
-  Version 0 (released on November 20th 2021)
-  ========================================
+
+# Version 0 (released on November 20th 2021)
 
 Release version, first trial with CRUD article resource running.
 
