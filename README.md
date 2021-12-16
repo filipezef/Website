@@ -29,7 +29,7 @@ Available pages:
 5) JS -> my learning path on Javascript;
 6) Python -> my learning path on Python;
 7) Rails -> my learning path on Rails;
-8) Miscelaneous -> not yet defined, however planned to host miscelaneous content (whatever that makes sense to the site content)
+8) Coding -> my learning path on overall aspects of coding.
 
 *Articles page related to articles feature (CRUD), to be released on further versions. Improvement on input methods required. Anyone with access to the page without any authentication can play with it at will.
 
