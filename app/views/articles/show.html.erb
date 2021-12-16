@@ -1,8 +1,18 @@
+<style>
+  html { 
+    background: url(/images/DSC_0025.JPG) no-repeat center center fixed; 
+  }
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Merriweather&display=swap" rel="stylesheet">
+
 <h1>Showing articles details</h1>
 
 <p><strong>Title: </strong><%= @article.title %></p>
 <p><strong>Description: </strong><%= @article.description %></p>
 
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %> |
-<%= link_to 'Return to articles listing', articles_path %>
+<footer class="container">
+  <%= link_to 'Edit', edit_article_path(@article) %> |
+  <%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %> |
+  <%= link_to 'Return to articles listing', articles_path %>
+</footer>
