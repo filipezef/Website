@@ -1,18 +1,59 @@
-<style>
-  html { 
-    background: url(/images/DSC_0025.JPG) no-repeat center center fixed; 
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
 
-<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Merriweather&display=swap" rel="stylesheet">
+  <head>
+    <title>CRUD - Read</title>
 
-<h1>Showing articles details</h1>
+    <meta charset="utf-8">
 
-<p><strong>Title: </strong><%= @article.title %></p>
-<p><strong>Description: </strong><%= @article.description %></p>
+    <%= stylesheet_link_tag "main" %>
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+  </head>
 
-<footer class="container">
-  <%= link_to 'Edit', edit_article_path(@article) %> |
-  <%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %> |
-  <%= link_to 'Return to articles listing', articles_path %>
-</footer>
+  <body>
+  
+    <header class="primary-header container group">
+      <nav class="nav primary-nav">
+        <ul>
+          <li><%= link_to "Return to messages", articles_path %>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero container">
+      <h2>Read Message</h2>
+    </section>
+
+    <section class="row-alt">
+      <div class="lead container">
+        <p>CRUD - Read</p>
+      </div>
+    </section>
+
+    <section class="row-new-article">
+      <div class="grid">
+	  
+        <h6><strong>Title: </strong><%= @article.title %></h6>
+        <h6><strong>Description: </strong><%= @article.description %></h6>
+
+      </div>
+    </section>
+
+    <footer class="primary-footer container group">
+      
+      <small>&copy; Filipe Zeferino</small>
+
+      <nav class="nav-footer">
+        <ul>
+          <li><%= link_to 'Edit', edit_article_path(@article) %></li><!--
+          --><li><%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %></li><!--
+          --><li><%= link_to "Return to messages", articles_path %></li>
+        </ul>
+      </nav>
+
+    </footer>
+
+  </body>
+
+</html>

@@ -1,13 +1,56 @@
-<style>
-  html { 
-    background: url(/images/DSC_0025.JPG) no-repeat center center fixed; 
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
 
-<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Merriweather&display=swap" rel="stylesheet">
+  <head>
+    <title>CRUD - Create</title>
 
-<h1>Crate a new article</h1>
+    <meta charset="utf-8">
 
-<%= render 'form' %>
+    <%= stylesheet_link_tag "main" %>
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+  </head>
 
-<%= link_to 'Return to articles listing', articles_path %>
+  <body>
+  
+    <header class="primary-header container group">
+      <nav class="nav primary-nav">
+        <ul>
+          <li><%= link_to "Return to Messages", articles_path %>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero container">
+      <h2>Crate a new article</h2>
+    </section>
+
+    <section class="row-alt">
+      <div class="lead container">
+        <p>CRUD - Create</p>
+      </div>
+    </section>
+
+    <section class="row-new-article">
+      <div class="grid">
+
+        <%= render 'form' %>
+
+      </div>
+    </section>
+
+    <footer class="primary-footer container group">
+      
+      <small>&copy; Filipe Zeferino</small>
+
+      <nav class="nav-footer">
+        <ul>
+          <li><%= link_to "Return to Messages", articles_path %></li>
+        </ul>
+      </nav>
+
+    </footer>
+
+  </body>
+
+</html>

@@ -14,13 +14,9 @@
   <body>
     <header class="primary-header container group">
       <nav class="nav primary-nav">
-
-        <!-- articles feature not to be displayed yet, missing improvements for authentication -->
-
         <ul>
           <li><%= link_to "Home", root_path %></li><!--
           --><li><%= link_to "About", about_path %></li><!--
-          <li><%= link_to "Articles", articles_path %></li>--><!--
           --><li><%= link_to "CSS + HTML", css_html_path %></li><!--
           --><li><%= link_to "Javascript", js_path %></li><!--
           --><li><%= link_to "Python", python_path %></li><!--
@@ -41,17 +37,20 @@
       <a class="btn btn-alt" href="coding" >Coding</a>
     </section>
 
+    <section class="row-alt">
+      <div class="lead container">
+        <p>Check out the CRUD feature just lounched:</p>
+        <a class="btn btn-alt" href="/articles" >CRUD</a>
+      </div>
+    </section>
+
     <footer class="primary-footer container group"> 
       <small>&copy; Filipe Zeferino</small>
 
       <nav class="nav-footer">
-        
-        <!-- articles feature not to be displayed yet, missing improvements for authentication -->
-
         <ul>
           <li><%= link_to "Home", root_path %></li><!--
           --><li><%= link_to "About", about_path %></li><!--
-          <li><%= link_to "Articles", articles_path %></li>--><!--
           --><li><%= link_to "CSS + HTML", css_html_path %></li><!--
           --><li><%= link_to "Javascript", js_path %></li><!--
           --><li><%= link_to "Python", python_path %></li><!--
