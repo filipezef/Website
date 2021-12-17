@@ -4,7 +4,7 @@ My test website, By Filipe Zeferino
 
 Dedicaded exclusively to code studying purposes, focusing on back end and front end coding learning.
 
-App based on Ruby (version 2.7.4.1) and Ruby on Rails (version 6)
+App based on Rails 6 and ruby 2.7.4.1. 
 
 Hosted by heroku > https://zeferino.herokuapp.com/
 Original link > https://aqueous-shelf-51129.herokuapp.com/
@@ -23,15 +23,13 @@ Main updates:
 Available pages:
 
 1) Home (index)
-2) About -> not yet defined, however planned to host some sort of resumé
-3) *Articles -> CRUD for text messages
+2) About -> content about me (under update)
+3) Articles -> CRUD for text messages (under update, missing log feature for safety purposes)
 4) CSS + HTML -> my learning path on CSS and HTML;
 5) JS -> my learning path on Javascript;
 6) Python -> my learning path on Python;
 7) Rails -> my learning path on Rails;
 8) Coding -> my learning path on overall aspects of coding.
-
-*Articles page related to articles feature (CRUD), to be released on further versions. Improvement on input methods required. Anyone with access to the page without any authentication can play with it at will.
 
 
 # Version 0 (released on November 20th 2021)
