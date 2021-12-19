@@ -3,9 +3,22 @@
 My test website, By Filipe Zeferino.
 Dedicaded exclusively to code studying purposes, focusing on back end and front end coding learning.
 
-App based on Rails 6 and ruby 2.7.4.1. 
+App based on Rails 6 and ruby 2.7.4.1.
+
+Dependencies: Bootstrap 5.1
 
 Hosted by heroku > https://zeferino.herokuapp.com/
+
+# Version 1.1 (released on December 18th 2021)
+
+Main updates:
+
+1) Partials for navtag and footer;
+2) custom.css.scss file created (bootstrap elements);
+3) Grid background color updated, same as for body;
+4) DRY specially for articles and pages files;
+5) CSS+HTML page merged with Javascript to form front-end page;
+6) Python and Rails pages merged to form back-end page;
 
 # Version 1 (released on December 16th 2021)
 

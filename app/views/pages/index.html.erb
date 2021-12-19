@@ -1,52 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<head>
+  <title>Home</title>
+</head>
 
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-    <%= stylesheet_link_tag "main" %>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
-  </head>
+<section class="hero container">
+  <br>
+  <h2>Welcome to my website!</h2>
+  <p>Check below what I could cover so far on coding</p>
+  <a class="btn btn-alt" href="back-end" >Back-end</a>
+  <a class="btn btn-alt" href="front-end" >Front-end</a>
+  <a class="btn btn-alt" href="coding" >Coding</a>
+</section>
 
-  <body>
-    
-    <header class="primary-header container group">
-      <nav class="nav primary-nav">
-        <ul>
-          <li><%= link_to "About", about_path %></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section class="hero container">
-      <br>
-      <h2>Welcome to Filipe Zeferino's website!</h2>
-      <p>Check below what I could cover so far on coding</p>
-      <a class="btn btn-alt" href="css-html" >CSS + HTML</a>
-      <a class="btn btn-alt" href="js" >Javascript</a>
-      <a class="btn btn-alt" href="python" >Python</a>
-      <a class="btn btn-alt" href="rails" >Rails</a>
-      <a class="btn btn-alt" href="coding" >Coding</a>
-    </section>
-
-    <section class="row-alt">
-      <div class="lead container">
-        <p>CRUD feature just launched!</p>
-        <a class="btn btn-alt" href="/articles" >CRUD</a>
-      </div>
-    </section>
-
-    <footer class="primary-footer container group"> 
-      
-      <small>&copy; Filipe Zeferino</small>
-
-      <nav class="nav-footer">
-        <ul>
-          <li><%= link_to "About", about_path %></li>
-        </ul>
-      </nav>
-
-    </footer>
-
-  </body>
-</html>
+<section class="row-alt">
+  <div class="lead container">
+    <p>CRUD feature just launched!</p>
+    <a class="btn btn-alt" href="/articles" >CRUD</a>
+  </div>
+</section>

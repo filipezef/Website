@@ -1,0 +1,39 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+/*
+  ========================================
+  Navbar
+  ========================================
+*/
+
+.btn-outline-success {
+  border: 1px solid #ffffff;
+}
+.btn-outline-success:hover {
+  color: #2c2b2b;
+  background: #f3a007;
+  border: 1px solid #ffffff;
+}
+.navbar {
+  background-color: #2c2b2b !important;
+}
+.nav-link {
+  color: #ffffff !important;
+}
+.nav-link:hover {
+  color: #f3a007 !important;
+}
+.navbar .dropdown-item {
+  color: #2c2b2b !important;
+}
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #ffffff; 
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+#logo:hover {
+  color: #f3a007 !important;
+}

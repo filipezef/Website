@@ -130,7 +130,7 @@ html {
   min-width: 960px;
 }
 .row {
-  background: #fff;
+  background: #2c2b2b;
   padding: 66px 0 44px 0;
 }
 .row-alt {
@@ -141,7 +141,6 @@ html {
    padding: 44px 0 22px 0;
 }
 .row-new-article {
-  background: #2c2b2b;
   width: 500px;
   margin: auto;
 }
@@ -212,7 +211,7 @@ cite, em {
 
 .btn {
   border-radius: 5px;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-weight: 400;
@@ -221,12 +220,11 @@ cite, em {
   text-transform: uppercase;
 }
 .btn-alt {
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   padding: 10px 30px;
 }
 .btn-alt:hover {
-  background: #fff;
-  color: #f3a007;
+  background: #f3a007;
 }
 .btn-default {
   border: 0;
@@ -255,10 +253,10 @@ a:hover {
   color: #a9b2b9;
 }
 p a {
-  border-bottom: 1px solid #dfe2e5;
+  border-bottom: 1px solid rgb(223, 226, 229);
 }
 .primary-header a, .primary-footer a {
-  color: #fff;
+  color: #ffffff;
 }
 .primary-header a:hover, .primary-footer a:hover {
   color: #f3a007;
@@ -459,18 +457,18 @@ th {
 }
 td {
   width: 40%;
-  color: #080808;
+  color: #ffffff;
   font-size: 16px;
 }
 thead {
   line-height: 44px;
 }
 thead th {
-  color: #080808;
+  color: #ffffff;
   font-size: 24px;
 }
 tbody th {
-  color: #0b0c0c;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 400;
   padding-top: 22px;

@@ -6,16 +6,10 @@ class PagesController < ApplicationController
   def about
   end
 
-  def css_html
+  def back_end
   end
 
-  def js
-  end
-
-  def python
-  end
-
-  def rails
+  def front_end
   end
 
   def coding

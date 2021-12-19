@@ -1,55 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+<head> 
+  <title>View Message</title>
+</head>
 
-  <head>
-    <meta charset="utf-8">
-    <title>CRUD - Read</title>
-    <%= stylesheet_link_tag "main" %>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
-  </head>
+<section class="hero container">
+  <h2>Read Message</h2>
+</section>
 
-  <body>
-  
-    <header class="primary-header container group">
-      <nav class="nav primary-nav">
-        <ul>
-          <li><%= link_to "Return to messages", articles_path %>
-        </ul>
-      </nav>
-    </header>
+<section class="row-alt">
+  <div class="lead container">
+    <p>CRUD - Read</p>
+  </div>
+</section>
 
-    <section class="hero container">
-      <h2>Read Message</h2>
-    </section>
+<section class="row-new-article">
+  <div class="grid">
+    <h6><strong>Title: </strong><%= @article.title %></h6>
+    <h6><strong>Description: </strong><%= @article.description %></h6>
+  </div>
+</section>
 
-    <section class="row-alt">
-      <div class="lead container">
-        <p>CRUD - Read</p>
-      </div>
-    </section>
+<section class="row">
+  <div class="lead container">
+    <a class="btn btn-alt" href="/articles" >return</a>
+  </div>
+</section>
 
-    <section class="row-new-article">
-      <div class="grid">
-	  
-        <h6><strong>Title: </strong><%= @article.title %></h6>
-        <h6><strong>Description: </strong><%= @article.description %></h6>
-
-      </div>
-    </section>
-
-    <footer class="primary-footer container group">
-      
-      <small>&copy; Filipe Zeferino</small>
-
-      <nav class="nav-footer">
-        <ul>
-          <li><%= link_to 'Edit', edit_article_path(@article) %></li><!--
-          --><li><%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %></li><!--
-          --><li><%= link_to "Return to messages", articles_path %></li>
-        </ul>
-      </nav>
-
-    </footer>
-
-  </body>
-</html>

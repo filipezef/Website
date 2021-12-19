@@ -1,52 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+<head> 
+  <title>New Message</title>
+</head>
 
-  <head>
-    <meta charset="utf-8">
-    <title>CRUD - Create</title>
-    <%= stylesheet_link_tag "main" %>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
-  </head>
+<section class="hero container">
+  <h2>Crate a new messsage</h2>
+</section>
 
-  <body>
-  
-    <header class="primary-header container group">
-      <nav class="nav primary-nav">
-        <ul>
-          <li><%= link_to "Return to Messages", articles_path %>
-        </ul>
-      </nav>
-    </header>
+<section class="row-alt">
+  <div class="lead container">
+    <p>CRUD - Create</p>
+  </div>
+</section>
 
-    <section class="hero container">
-      <h2>Crate a new article</h2>
-    </section>
+<section class="row-new-article">
+  <div class="grid">
 
-    <section class="row-alt">
-      <div class="lead container">
-        <p>CRUD - Create</p>
-      </div>
-    </section>
+    <%= render 'form' %>
 
-    <section class="row-new-article">
-      <div class="grid">
+  </div>
+</section>
 
-        <%= render 'form' %>
-
-      </div>
-    </section>
-
-    <footer class="primary-footer container group">
-      
-      <small>&copy; Filipe Zeferino</small>
-
-      <nav class="nav-footer">
-        <ul>
-          <li><%= link_to "Return to Messages", articles_path %></li>
-        </ul>
-      </nav>
-
-    </footer>
-
-  </body>
-</html>
+<section class="row">
+  <div class="lead container">
+    <a class="btn btn-alt" href="/articles" >Cancel</a>
+  </div>
+</section>
