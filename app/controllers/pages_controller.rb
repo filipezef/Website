@@ -5,15 +5,9 @@ class PagesController < ApplicationController
   def about
   end
 
-  def new
-  end
-
   def back_end
   end
 
   def front_end
-  end
-
-  def coding
   end
 end
