@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   root 'pages#index'
   get 'about', to: 'pages#about'
-  get 'aboutme', to: 'pages#aboutme'
   get 'back-end', to: 'pages#back_end'
   get 'front-end', to: 'pages#front_end'
   get 'coding', to: 'pages#coding'

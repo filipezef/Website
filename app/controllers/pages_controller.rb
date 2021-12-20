@@ -6,9 +6,6 @@ class PagesController < ApplicationController
   def about
   end
 
-  def aboutme
-  end
-
   def back_end
   end
 
