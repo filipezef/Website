@@ -4,16 +4,15 @@
 
 <section class="hero container">
   <br>
-  <h2>Welcome to my website!</h2>
+  <h2>Welcome!</h2>
   <p>Check below what I could cover so far on coding</p>
-  <a class="btn btn-alt" href="back-end" >Back-end</a>
-  <a class="btn btn-alt" href="front-end" >Front-end</a>
-  <a class="btn btn-alt" href="coding" >Coding</a>
+  <%= link_to "Back-end", back_end_path, class: "btn-mine btn-alt" %>
+  <%= link_to "Front-end", front_end_path, class: "btn-mine btn-alt" %>
 </section>
 
 <section class="row-alt">
   <div class="lead container">
     <p>CRUD feature just launched!</p>
-    <a class="btn btn-alt" href="/articles" >CRUD</a>
+    <%= link_to "CRUD", articles_path, class: "btn-mine btn-alt" %>
   </div>
 </section>

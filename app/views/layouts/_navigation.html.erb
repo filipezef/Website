@@ -2,29 +2,25 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" id="logo" href="/about">Filipe Zeferino</a>
+    <%= link_to "Zef Blog", root_path, class: "navbar-brand", id: "logo" %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <%= link_to "About", about_path, class: "nav-link active", aria_current: "page" %>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Learning Status
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="/front-end">Front-end</a></li>
-            <li><a class="dropdown-item" href="/back-end">Back-end</a></li>
-            <li><a class="dropdown-item" href="/coding">Coding - Overall</a></li>
-          </ul>
+        <li class="nav-item">
+          <%= link_to "Back-end", back_end_path, class: "nav-link active", aria_current: "page" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Front-end", front_end_path, class: "nav-link active", aria_current: "page" %>
         </li>
       </ul>
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit" title="To be implemented soon!" >Search</button>
+        <input class="form-control me-2" type="search" placeholder="Comming soon!" aria-label="Search">
+        <button class="btn-mine-nav btn-alt" type="submit" title="Search feature comming soon!" >Search</button>
       </form>
     </div>
   </div>

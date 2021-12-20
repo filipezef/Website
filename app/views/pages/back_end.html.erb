@@ -15,28 +15,28 @@
   </div>
 </section>
 
-<section class="row">
+<section class="row-mine">
   <div class="grid">
 
     <!--Udemy - Ruby on Rails-->
 
     <section class="teaser col-1-3">
-      <h5>Ruby on Rails Developer Course</h5>
-      <a href="https://www.udemy.com/course/the-complete-ruby-on-rails-developer-course/" target="_blank">
-        <img class="teaser" src="/images/rails/ruby-on-rails-developer-udemy.PNG" title="On going, currently on class 134 out of 446 (30% completed)" alt="Udemy - Ruby on Rails Course">
-        <h3>Ruby on Rails Developer Course</h3>
-      </a>
+      <h5 class="text-center">Udemy</h5>
+
+      <%= link_to image_tag("rails/ruby-on-rails-developer-udemy.PNG") + "Ruby on Rails Developer Course", "https://www.udemy.com/course/the-complete-ruby-on-rails-developer-course/", class: "teaser", title: "Currently on class 145 out of 446 (32% completed)", target: :_blank %>
+     
+      <h3></h3>
       <h4>Learn to make innovative web apps with Ruby on Rails and unleash your creativity</h4>
     </section><!--
 
     One Bit Code - Pure Ruby
     
     --><section class="teaser col-1-3">
-      <h5>One Bit Code - Pure Ruby</h5>
-      <a href="https://onebitcode.com/course/ruby-puro/" target="_blank">
-        <img class="teaser" src="/images/rails/onebitcode-ruby-puro.PNG" title="On going, currently on class 10 out of 10 (missing to complete final project)" alt="One Bit Code - Pure Ruby">
-        <h3>Pure Ruby Course</h3>
-      </a>
+      <h5 class="text-center">One Bit Code</h5>
+
+      <%= link_to image_tag("rails/onebitcode-ruby-puro.PNG") + "Pure Ruby", "https://onebitcode.com/course/ruby-puro/", class: "teaser", title: "10 out of 10 classes done (missing to complete final project)", target: :_blank %>
+
+      <h3></h3>
       <h4>10 classes with examples and tutorials, at the end of the course it is proposed a final project to be deployed.</h4>
     </section>
 
@@ -47,46 +47,107 @@
 
 <section class="row-alt">
   <div class="lead container">
-    <h2>Python learning road map</h2>
-    <p>(hover over the images the check each course status)</p>
+    <h2>Python</h2>
+    <p>(hover over the images to check the course status)</p>
   </div>
 </section>
 
-<section class="row">
+<section class="row-mine">
   <div class="grid">
 
     <!--Udemy - Python 3 Course-->
 
     <section class="teaser col-1-3">
-      <h5>Python 3 Course</h5>
-      <a href="https://www.udemy.com/course/python-3-do-zero-ao-avancado/" title="On going, currently on class 96 out of 434 (20% completed)" target="_blank">
-        <img class="teaser" src="/images/python/python3-udemy.PNG" alt="Udemy - Python 3 Course">
-        <h3>Python 3 Course</h3>
-      </a>
+      <h5 class="text-center">Udemy</h5>
+
+      <%= link_to image_tag("python/python3-udemy.PNG") + "Python 3", "https://www.udemy.com/course/python-3-do-zero-ao-avancado/", class: "teaser", title: "96 out of 434 class completed (22% completed)", target: :_blank %>
+
+      <h3></h3>
       <h4>Coding with Django, PyQT5, Selenium, Regexp, Tests e TDD, POO, Design Patterns GoF and algoritms.</h4>
     </section><!--
     
     HackerRank - 30 Days of Code
     
     --><section class="teaser col-1-3">
-      <h5>HackerRank - 30 Days of Code</h5>
-      <a href="https://www.hackerrank.com/domains/tutorials/30-days-of-code" title="On going, currently on day 18 out of 30, silver level (60% completed)" target="_blank">
-        <img class="teaser" src="/images/python/hackerrank-30-days-code.PNG" alt="HackerRank - 30 Days of Code">
-        <h3>30 Days of Code</h3>
-      </a>
+      <h5 class="text-center">HackerRank</h5>
+
+      <%= link_to image_tag("python/hackerrank-30-days-code.PNG") + "30 Days of Code", "https://www.hackerrank.com/domains/tutorials/30-days-of-code", class: "teaser", title: "18 out of 30 classes done (60% completed)", target: :_blank %>
+
+      <h3></h3>
       <h4>Tutorial with proposed problems for solution through coding (multiple lenguages supported)</h4>
     </section><!--
     
     HackerRank - Problem Solving
     
     --><section class="teaser col-1-3">
-      <h5>HackerRank - Problem Solving</h5>
-      <a href="https://www.hackerrank.com/domains/algorithms/" target="_blank">
-        <img class="teaser" src="/images/python/hackerrank-problem-solving.PNG" title="On going, currently on silver level (20% completed)" alt="HackerRank - Problem Solving">
-        <h3>Problem Solving</h3>
-      </a>
+      <h5 class="text-center">HackerRank</h5>
+
+      <%= link_to image_tag("python/hackerrank-problem-solving.PNG") + "Problem Solving", "https://www.hackerrank.com/domains/algorithms/", class: "teaser", title: "Silver badge (20% completed)", target: :_blank %>
+
+      <h3></h3>
       <h4>Tutorial with proposed problems for solution through coding (multiple lenguages supported).</h4>
     </section>
 
   </div>
 </section>
+
+<!--Coding - Overall-->
+
+<section class="row-alt">
+  <div class="lead container">
+    <h2>Coding - Overall Aspects</h2>
+    <p>Content to backup learning with references for a deeper understanding of all coding aspects.</p>
+  </div>
+</section>
+
+<section class="row-mine">
+  <div class="grid">
+
+    <section class="teaser col-1-3">
+      <section class="hero4 container">
+        
+        <h3 class="done"><strong>Articles (all covered)</strong></h3>
+      
+        <ul>
+          <li>
+          <%= link_to "An Introduction To Software Development Methodologies", "https://www.alliancesoftware.com.au/introduction-software-development-methodologies/", target: :_blank, class: "done" %>
+          </li>
+          <li>
+          <%= link_to "8 Ways to Become a Better Coder", "https://newrelic.com/blog/nerd-life/8-ways-become-a-better-coder/", target: :_blank, class: "done" %>
+          </li>
+          <li>
+          <%= link_to "A guide to naming things in programing", "https://levelup.gitconnected.com/a-guide-for-naming-things-in-programming-2dc2d74879f8/", target: :_blank, class: "done" %>
+          </li>
+          <li>
+          <%= link_to "8 Ways to Hone Your Programming Skills and Become a Better Coder", "https://blog.appdynamics.com/engineering/8-ways-to-hone-your-programming-skills-and-become-a-better-coder/", target: :_blank, class: "done" %>
+          </li>
+          <li>
+          <%= link_to "10 tips for becoming a better programmer", "https://www.techrepublic.com/article/10-tips-for-becoming-a-better-programmer/", target: :_blank, class: "done" %>
+          </li>
+          <li>
+          <%= link_to "Eight Rules for Effective Software Production", "https://www.toptal.com/it/eight-rules-for-software-production/", target: :_blank, class: "done" %>
+          </li>
+          <li>
+          <%= link_to "Zen of Python", "https://www.python.org/dev/peps/pep-0020/", target: :_blank, class: "done" %>
+          </li>     
+        </ul>
+      </section>
+
+      <section class="hero4 container">
+        <h3><strong>Books (not started)</strong></h3>
+        <ul>
+          <li>
+          <%= link_to "Orientação a Objetos: Aprenda seus conceitos e suas aplicabilidades de forma efetiva", "https://www.amazon.com.br/Orienta%C3%A7%C3%A3o-Objetos-Aprenda-conceitos-aplicabilidades-ebook/dp/B01LXHG8HX/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2SMT1M8J5QZ1&dchild=1&keywords=orienta%C3%A7%C3%A3o+a+objetos&qid=1626298255&s=digital-text&sprefix=orienta%C3%A7%C3%A3o+a+o%2Cdigital-text%2C306&sr=1-1/", target: :_blank %>
+          </li>
+          <li>
+          <%= link_to "Clean Code", "https://www.amazon.com.br/Clean-Code-Handbook-Software-Craftsmanship-ebook/dp/B001GSTOAM/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=clean+code&qid=1626297940&s=digital-text&sr=1-1/", target: :_blank %>
+          </li>
+          <li>
+          <%= link_to "Pragmatic Programmer", "https://www.amazon.com.br/Pragmatic-Programmer-Journeyman-Master-English-ebook/dp/B003GCTQAE/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=/", target: :_blank %>
+          </li>
+          <li>
+          <%= link_to "Design Patterns", "https://www.amazon.com.br/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8/ref=reads_cwrtbar_3/140-0923922-7614649?pd_rd_w=hlvVY&pf_rd_p=f0989065-fdf0-44f6-89ba-12ac8c8cc0a8&pf_rd_r=DHPEM72K3G06XYRJ0M8A&pd_rd_r=d9c63e2a-110e-4ed5-a836-30dcf50f9b43&pd_rd_wg=UYutF&pd_rd_i=B000SEIBB8&psc=1/", target: :_blank %>
+          </li>    
+        </ul>
+      </section>
+    </section>
