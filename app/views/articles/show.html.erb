@@ -3,21 +3,32 @@
 </head>
 
 <section class="hero container">
-  <h2>Read Message</h2>
+  <h2>View Message</h2>
 </section>
 
-<section class="row-alt">
-  <div class="lead container">
-    <p>CRUD - Read</p>
+<div class="container">
+  <div class="row justify-content-center" >
+    <div class="col-10" >
+      <%= form_with(model: @article, class: "shadow p-3 mb-3 rounded", id: "form", local: true) do |f| %>
+        <div class="form-group row", id="form">
+          <%= f.label :title, class: "col-2 col-form-label text-light" %>
+          <div class="col-10", id="form" >
+            <%= f.text_field :title, class: "form-control shadow rounded", placeholder: "Message's title" %>
+          </div>
+        </div>
+        <br>
+        <div class="form-group row", id="form">
+          <%= f.label :description, class: "col-2 col-form-label text-light" %>
+          <div class="col-10"> 
+            <%= f.text_area :description, rows: 10, class: "form-control shadow rounded", placeholder: "Message's description" %>
+          </div>
+        </div>
+        <br>
+      <% end %>
+    </div> 
   </div>
-</section>
+</div>
 
-<section class="row-new-article">
-  <div class="grid">
-    <h6><strong>Title: </strong><%= @article.title %></h6>
-    <h6><strong>Description: </strong><%= @article.description %></h6>
-  </div>
-</section>
 
 <section class="row-mine">
   <div class="lead container">
