@@ -1,33 +1,27 @@
 <div class="container">
-  <% if @article.errors.any? %>
-    <h2>The following errors prevented the article to be saved</h2>
-    <ul>
-      <% @article.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-      <% end %>
-    </ul>
-  <% end %>
-
   <div class="row justify-content-center" >
     <div class="col-10" >
+      <%= render "shared/errors"%>
       <%= form_with(model: @article, class: "shadow p-3 mb-3 rounded", id: "form", local: true) do |f| %>
+        
         <div class="form-group row", id="form">
-          <%= f.label :title, class: "col-2 col-form-label text-light" %>
+          <%= f.label :title, class: "col-2 col-form-label text-light mb-3" %>
           <div class="col-10", id="form" >
             <%= f.text_field :title, class: "form-control shadow rounded", placeholder: "Message's title" %>
           </div>
         </div>
-        <br>
+        
         <div class="form-group row", id="form">
           <%= f.label :description, class: "col-2 col-form-label text-light" %>
-          <div class="col-10"> 
+          <div class="col-10 mb-3"> 
             <%= f.text_area :description, rows: 10, class: "form-control shadow rounded", placeholder: "Message's description" %>
           </div>
         </div>
-        <br>
+
         <div class="form-group row justify-content-center", id="form">
           <%= f.submit class: "btn btn-outline-light btn-lg col-3" %>
         </div>
+        
       <% end %>
     </div>
   </div>

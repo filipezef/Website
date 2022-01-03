@@ -1,4 +1,362 @@
 @import 'bootstrap/dist/css/bootstrap';
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+  background: #2c2b2b;
+  color: #F5F8F8;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.done {
+  color: #1d8005;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+html {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+     -moz-box-sizing: inherit;
+          box-sizing: inherit;
+}
+.grid {
+  margin: 0 auto;
+  width: 960px;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.col-1-3, .col-2-3 {
+  display: inline-block;
+  vertical-align: top;
+}
+.grid, .col-1-3, .col-2-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+
+.row-mine {
+  padding: 66px 0 44px 0;
+}
+.row-alt{
+  min-width: 960px;
+}
+.row-alt {
+   background: #4d5153;
+   background: -webkit-linear-gradient(to right, #2e2d35, #646964);
+   background:    -moz-linear-gradient(to right, #2e2d35, #646964);
+   background:         linear-gradient(to right, #2e2d35, #646964);
+   padding: 44px 0 22px 0;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h2, h3, h4 {
+  color: #f3a007;
+}
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+h6 {
+  color: #a9b2b9;
+  font-size: 16px;
+  font-weight: 300;
+}
+strong {
+  font-weight: 400;
+}
+cite, em {
+  font-style: italic;
+}
+
+/*
+  ========================================
+  Leads
+  ========================================
+*/
+
+.lead {
+  text-align: center;
+}
+.lead p {
+  font-size: 21px;
+  line-height: 33px;
+}
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn-mine {
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.btn-mine:hover {
+  background: #f3a007;
+  color: #4d5153;
+
+}
+.btn-alt {
+  border: 1px solid #ffffff;
+  padding: 10px 30px;
+}
+.btn-alt:hover {
+  background: #f3a007;
+  color: #4d5153;
+}
+
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+  color: #f3a007;
+  text-decoration: none;
+}
+a:hover {
+  color: #a9b2b9;
+}
+p a {
+  border-bottom: 1px solid rgb(223, 226, 229);
+}
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+.logo {
+  border-top: 4px solid #f3a007;
+  float: left;
+  font-size: 48px;
+  font-weight: 100;
+  letter-spacing: .5px;
+  line-height: 44px;
+  padding: 40px 0 22px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: right;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+/* header navigation */
+
+.nav-mine {
+  text-align: center;
+}
+.nav-mine li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.nav-mine li:last-child {
+  margin-right: 0;
+}
+
+
+/*
+  ========================================
+  Home
+  ========================================
+*/
+
+.hero {
+  color: #fff;
+  line-height: 44px;
+  padding: 22px 80px 50px 80px;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 36px;
+}
+.hero p {
+  font-size: 24px;
+  font-weight: 100;
+}
+.teaser a:hover h3 {
+  color: #a9b2b9;
+}
+.teaser img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%
+}
+
+/*
+  =============================================
+  About | Back-end | Front-end
+  =============================================
+*/
+
+.hero2 {
+  color: #fff;
+  line-height: 44px;
+  padding: 32px 80px 10px 80px;
+  text-align: center;
+}
+.hero2 h2 {
+  font-size: 36px;
+}
+.hero3 {
+  color: #fff;
+  line-height: 44px;
+  padding: 10px 80px 10px 80px;
+  text-align: left;
+}
+.hero3 h2 {
+  font-size: 36px;
+}
+.hero4 {
+  color: #fff;
+  padding: 10px 80px 10px 80px;
+  text-align: left;
+}
+.hero4 h2 {
+  font-size: 36px;
+}
+
+/*
+  ========================================
+  About
+  ========================================
+*/
+ 
+.about {
+  margin-bottom: 44px;
+}
+.about-info {
+  border: 1px solid #dfe2e5;
+  border-radius: 5px;
+  margin-top: 88px;
+  padding-bottom: 22px;
+  text-align: center;
+}
+.about-info img {
+  border-radius: 5%;
+  height: 130px;
+  margin: -66px 0 22px 0;
+  vertical-align: top;
+}
+
+.about ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  ========================================
+  Back-end
+  ========================================
+*/
+
+.container {
+  width: 960px;
+}
+
+/*
+  ========================================
+  Articles - Index
+  ========================================
+*/
+
+.card-header {
+  color: #2c2b2b !important;
+  font-style: italic;
+}
+
+.card-text {
+  color: #2c2b2b !important;
+}
+
+/*
+  ========================================
+  Articles - Show
+  ========================================
+*/
+
+.card-text-show {
+  color: #2c2b2b !important;
+  text-align: left;
+}
+
+/*
+  ========================================
+  Articles - Form
+  ========================================
+*/
+
+#form {
+  background-color: #575555 !important;
+}
+
+
 /*
   ========================================
   General
@@ -47,39 +405,4 @@
 }
 #logo:hover {
   color: #f3a007 !important;
-}
-
-/*
-  ========================================
-  Back-end
-  ========================================
-*/
-
-.container {
-  width: 960px;
-}
-
-/*
-  ========================================
-  Articles - Index
-  ========================================
-*/
-
-.card-header {
-  color: #2c2b2b !important;
-  font-style: italic;
-}
-
-.card-text {
-  color: #2c2b2b !important;
-}
-
-/*
-  ========================================
-  Articles - Form
-  ========================================
-*/
-
-#form {
-  background-color: #6b6969 !important;
 }
