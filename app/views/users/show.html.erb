@@ -1,0 +1,11 @@
+<head> 
+  <title>User Profile</title>
+</head>
+
+<section class="hero container">
+  <h2><%= @user.username %>'s profile</h2>
+</section>
+
+<%= gravatar_for  @user, size: 200 %>
+
+<%= render 'articles/article' %>
