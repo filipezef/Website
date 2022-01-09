@@ -26,7 +26,7 @@
         </div>
 
         <div class="form-group row justify-content-center", id="form">
-          <%= f.submit "Sign up", class: "btn btn-outline-light btn-lg col-3" %>
+          <%= f.submit(@user.new_record? ? "Sign up" : "Update account", class: "btn btn-outline-light btn-lg col-3") %>
         </div>
         
       <% end %>
@@ -37,6 +37,6 @@
 
 <section class="row-mine">
   <div class="lead container">
-    <%= link_to "cancel", articles_path, class: "btn-mine btn-alt" %>
+    <%= link_to "cancel", root_path, class: "btn-mine btn-alt" %>
   </div>
 </section>
