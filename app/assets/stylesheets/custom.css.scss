@@ -171,7 +171,7 @@ a:hover {
   color: #a9b2b9;
 }
 p a {
-  border-bottom: 1px solid rgb(223, 226, 229);
+  border-bottom: 1px solid #dfe2e5;
 }
 
 /*
@@ -219,12 +219,12 @@ p a {
 
 /*
   ========================================
-  Home
+  Home - Index
   ========================================
 */
 
 .hero {
-  color: #fff;
+  color: #ffffff;
   line-height: 44px;
   padding: 22px 80px 50px 80px;
   text-align: center;
@@ -253,7 +253,7 @@ p a {
 */
 
 .hero2 {
-  color: #fff;
+  color: #ffffff;
   line-height: 44px;
   padding: 32px 80px 10px 80px;
   text-align: center;
@@ -262,7 +262,7 @@ p a {
   font-size: 36px;
 }
 .hero3 {
-  color: #fff;
+  color: #ffffff;
   line-height: 44px;
   padding: 10px 80px 10px 80px;
   text-align: left;
@@ -271,12 +271,15 @@ p a {
   font-size: 36px;
 }
 .hero4 {
-  color: #fff;
+  color: #ffffff;
   padding: 10px 80px 10px 80px;
   text-align: left;
 }
 .hero4 h2 {
   font-size: 36px;
+}
+.hero4 ul {
+  list-style-type: none;
 }
 
 /*
