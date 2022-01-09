@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
+  
   def index
+    redirect_to articles_path if logged_in?
   end
 
   def about
@@ -10,4 +12,5 @@ class PagesController < ApplicationController
 
   def front_end
   end
+
 end

@@ -23,6 +23,22 @@
         <li class="nav-item">
           <%= link_to "Messages", articles_path, class: "nav-link active", aria_current: "page" %>
         </li>
+        
+        <% if logged_in? %>
+          <li class="nav-item">
+            <%= link_to current_user.username, user_path(current_user), class: "nav-link active", aria_current: "page" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Logout", logout_path, class: "btn btn-danger", aria_current: "page", method: :delete %>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to "Log in", login_path, class: "btn btn-success me-3", aria_current: "page" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Sign up", signup_path, class: "btn btn-success", aria_current: "page" %>
+          </li>
+        <% end %>
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Comming soon!" aria-label="Search">
