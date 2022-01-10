@@ -8,12 +8,14 @@
 
 <section class="row-alt">
   <div class="lead container">
-    <p>Be kind and leave a message.</p>
-    <a class="btn-mine btn-alt" href="/articles/new" >New Message</a>
+    <p>Be kind and leave a message (login required).</p>
+    <% if logged_in? %>
+      <%= link_to "New message", new_article_path, class: "btn btn-outline-info btn-lg" %>
+    <% end %>
   </div>
 </section>
 
-<div class="flickr_pagination">
+<div class="flickr_pagination mt-4">
   <%= will_paginate @articles, :container => false %>
 </div>
 <%= render 'article' %>
