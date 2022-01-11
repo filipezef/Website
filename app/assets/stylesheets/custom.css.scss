@@ -408,6 +408,14 @@ p a {
   color: #f3a007 !important;
 }
 
+/* Set the border color */
+          
+.custom-toggler.navbar-toggler {
+  border-color: gray;
+}
+
+
+
 /*
   ========================================
   Pagination (from will_paginate gem)
