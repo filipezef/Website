@@ -8,7 +8,7 @@
 
 body {
   background: #2c2b2b;
-  color: #Ffffff;
+  color: #ffffff;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .done {
@@ -219,7 +219,7 @@ p a {
 
 /*
   ========================================
-  Home - Index
+  Home
   ========================================
 */
 
@@ -244,6 +244,14 @@ p a {
   display: block;
   margin-bottom: 22px;
   max-width: 100%
+}
+
+#home-container {
+  background-image: image-url('home/DSC_0025.JPG');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 500px;
 }
 
 /*
