@@ -19,7 +19,7 @@
         </div>
 
         <div class="form-group row justify-content-center", id="form">
-          <%= f.submit class: "btn btn-outline-light btn-lg col-3" %>
+          <%= f.submit class: "btn btn-outline-light col-3" %>
         </div>
         
       <% end %>
@@ -28,8 +28,7 @@
   
 </div>
 
-<section class="row-mine">
-  <div class="lead container">
-    <%= link_to "cancel", articles_path, class: "btn-mine btn-alt" %>
-  </div>
-</section>
+<div class="lead container mt-3 mb-3">
+    <%= link_to "Return to Messages", articles_path, class: "btn btn-outline-light"  %>
+</div>
+

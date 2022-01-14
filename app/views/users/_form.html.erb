@@ -1,7 +1,8 @@
 <div class="container">
   <div class="row justify-content-center" >
-    <div class="col-10" >
+    <div class="col-8" >
       <%= render "shared/errors", obj: @user %>
+      
       <%= form_with(model: @user, class: "shadow p-3 mb-3 rounded", id: "form", local: true) do |f| %>
         
         <div class="form-group row", id="form">
@@ -26,17 +27,11 @@
         </div>
 
         <div class="form-group row justify-content-center", id="form">
-          <%= f.submit(@user.new_record? ? "Sign up" : "Update account", class: "btn btn-outline-light btn-lg col-3") %>
+          <%= f.submit(@user.new_record? ? "Sign up" : "Update", class: "btn btn-success col-2") %>
         </div>
         
       <% end %>
+
     </div>
   </div>
-  
 </div>
-
-<section class="row-mine">
-  <div class="lead container">
-    <%= link_to "cancel", users_path, class: "btn-mine btn-alt" %>
-  </div>
-</section>

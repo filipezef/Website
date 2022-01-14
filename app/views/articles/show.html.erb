@@ -2,8 +2,10 @@
   <title>View Message</title>
 </head>
 
-<section class="hero container">
-  <h2><%= @article.title %></h2>
+<section class="row-alt mt-3 mb-5">
+  <div class="lead container mt-2">
+    <h2><%= @article.title %></h2>
+  </div>
 </section>
 
 <div class="container">
@@ -29,9 +31,7 @@
   </div>
 </div>
 
-<section class="row-mine">
-  <div class="lead container">
-    <a class="btn-mine btn-alt" href="/articles" >return</a>
-  </div>
-</section>
+<div class="lead container mb-3">
+    <a class="btn btn-outline-light" href="/articles" >return</a>
+</div>
 
