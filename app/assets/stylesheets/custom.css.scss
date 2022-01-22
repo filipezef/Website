@@ -16,6 +16,7 @@ body {
   background: #2c2b2b;
 }
 #page-content {
+  min-height: 400px;
   flex: 1 0 auto;
   /*background-color: lightgrey;*/
 }
@@ -207,6 +208,15 @@ p a {
   margin-right: 0;
 }
 
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+#sticky-footer {
+  flex-shrink: none;
+}
 
 /*
   ========================================
@@ -378,7 +388,7 @@ p a {
   float: left;
   font-size: 1.7em;
   color: #ffffff; 
-  text-transform: uppercase;
+  
   letter-spacing: -1px;
   font-weight: bold;
 }

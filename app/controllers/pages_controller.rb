@@ -7,6 +7,9 @@ class PagesController < ApplicationController
   def about
   end
 
+  def about_new
+  end
+
   def back_end
   end
 

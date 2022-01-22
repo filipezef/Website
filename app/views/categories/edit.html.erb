@@ -1,0 +1,29 @@
+<head> 
+  <title>Edit Category</title>
+</head>
+
+<section class="row-alt mt-3 mb-5">
+  <div class="lead container mt-2">
+    <h2>Edit Category</h2>
+  </div>
+</section>
+
+<section class="row mt-5">
+  <div class="grid">
+
+    <div class="container">
+      <div class="row justify-content-center" >
+        <div class="col-9" >
+          
+          <%= render 'form' %>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="lead container mt-3 mb-3">
+        <%= link_to "Cancel", category_path(@category), class: "btn btn-danger"  %>
+    </div>
+
+  </div>
+</section>

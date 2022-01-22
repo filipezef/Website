@@ -1,0 +1,23 @@
+<head> 
+  <title>New Category</title>
+</head>
+
+<section class="row mt-5">
+  <div class="grid">
+
+    <div class="container">
+      <div class="row justify-content-center" >
+        <div class="col-9" >
+          
+          <%= render 'form' %>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="lead container mt-3 mb-3">
+        <%= link_to "Cancel", categories_path, class: "btn btn-danger"  %>
+    </div>
+
+  </div>
+</section>
