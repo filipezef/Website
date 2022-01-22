@@ -10,6 +10,9 @@ class PagesController < ApplicationController
   def about_new
   end
 
+  def about2
+  end
+
   def back_end
   end
 
