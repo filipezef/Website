@@ -1,6 +1,4 @@
-# README
-
-Website with CRUD functionality implemented
+#Website with CRUD functionality implemented
 
 Resources (all RESTful routes available): 
 
