@@ -282,16 +282,8 @@ p a {
 .nav-link:hover {
   color: #f3a007 !important;
 }
-#logo {
-  float: left;
-  font-size: 1.7em;
-  color: #ffffff; 
-  text-transform: uppercase;
-  
-  font-weight: bold;
-}
-#logo:hover {
-  color: #f3a007 !important;
+#logo img {
+  height: 47px; 
 }
 
 /* Set the border color */
