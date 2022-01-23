@@ -2,14 +2,14 @@
           
 <%= form_with(model: @category, class: "shadow p-3 mb-3 rounded", id: "form", local: true) do |f| %>
   
-  <div class="form-group row", id="form">
+  <div class="form-group row" id="form">
     <%= f.label :name, "Category name", class: "col-2 col-form-label text-light mb-3" %>
     <div class="col-10", id="form" >
       <%= f.text_field :name, class: "form-control shadow rounded", placeholder: "Enter a name" %>
     </div>
   </div>
 
-  <div class="form-group row justify-content-center", id="form">
+  <div class="form-group row justify-content-center" id="form">
     <%= f.submit class: "btn btn-success col-3" %>
   </div>
   

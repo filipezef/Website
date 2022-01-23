@@ -2,7 +2,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-light">
   <div class="container-fluid">
-    <%= link_to image_tag("navbar/z.png"), root_path, class: "navbar-brand", id: "logo" %>
+    <%= link_to image_tag("navbar/z.png"), root_path, class: "navbar-brand", id: "logo", alt: "Z logo" %>
     <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -56,10 +56,10 @@
           </li>
         <% else %>
           <li class="nav-item">
-            <%= link_to "Log in", login_path, class: "nav-link active fw-bold", aria_current: "page" %>
+            <%= link_to "Log in", login_path, class: "nav-link active fw-bold" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Sign up", signup_path, class: "nav-link active fw-bold", aria_current: "page" %>
+            <%= link_to "Sign up", signup_path, class: "nav-link active fw-bold" %>
           </li>
         <% end %>
         

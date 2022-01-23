@@ -4,21 +4,21 @@
       <%= render "shared/errors", obj: @article %>
       <%= form_with(model: @article, class: "shadow p-3 mb-3 rounded", id: "form", local: true) do |f| %>
         
-        <div class="form-group row", id="form">
+        <div class="form-group row" id="form">
           <%= f.label :title, class: "col-2 col-form-label text-light mb-3" %>
-          <div class="col-10", id="form" >
+          <div class="col-10" id="form" >
             <%= f.text_field :title, class: "form-control shadow rounded", placeholder: "Article's title" %>
           </div>
         </div>
         
-        <div class="form-group row", id="form">
+        <div class="form-group row" id="form">
           <%= f.label :description, class: "col-2 col-form-label text-light" %>
           <div class="col-10 mb-3">
             <%= f.text_area :description, rows: 10, class: "form-control shadow rounded", placeholder: "Article's description" %>
           </div>
         </div>
 
-        <div class="form-group row", id="form">
+        <div class="form-group row" id="form">
           <%= f.label :category, class: "col-2 col-form-label text-light" %>
           <div class="col-10 mb-3"> 
             <%= f.collection_select(:category_ids, Category.all, :id, :name, 
@@ -26,7 +26,7 @@
           </div>
         </div>
 
-        <div class="form-group row justify-content-center", id="form">
+        <div class="form-group row justify-content-center" id="form">
           <%= f.submit class: "btn btn-outline-light col-3" %>
         </div>
         
