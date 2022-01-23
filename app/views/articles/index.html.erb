@@ -1,12 +1,12 @@
 <head> 
-  <title>Messages</title>
+  <title>Articles</title>
 </head>
 
 <section class="row-alt mt-5">
   <div class="lead container">
-    <p>Be kind and leave a message<%= " (login required)" if !logged_in? %>.</p>
+    <p>Be kind and create an article<%= " (login required)" if !logged_in? %>.</p>
     <% if logged_in? %>
-      <%= link_to "New message", new_article_path, class: "btn btn-success" %>
+      <%= link_to "New article", new_article_path, class: "btn btn-success" %>
     <% end %>
   </div>
 </section>

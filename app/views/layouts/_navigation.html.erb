@@ -2,58 +2,44 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-light">
   <div class="container-fluid">
-    <%= link_to "FCZ", root_path, class: "navbar-brand", id: "logo" %>
+    <%= link_to "home", root_path, class: "nav-link active", aria_current: "page" %>
     <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            About
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><%= link_to "Back-end", back_end_path, class: "dropdown-item" %></li>
-            <li><%= link_to "Front-end", front_end_path, class: "dropdown-item" %></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><%= link_to "About Filipe", about_path, class: "dropdown-item" %></li>
-          </ul>
-        </li>
 
         <li class="nav-item">
-            <%= link_to "Bloggers", users_path, class: "nav-link active", aria_current: "page" %>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Messages
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <% if logged_in? %>
-              <%= link_to "New message", new_article_path, class: "dropdown-item" %>
-            <% end %>
-            <li><%= link_to "View messages", articles_path, class: "dropdown-item" %></li>
-          </ul>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Categories
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <% if logged_in? && current_user.admin? %>
-              <%= link_to "New category", new_category_path, class: "dropdown-item" %>
-            <% end %>
-            <li><%= link_to "View categories", categories_path, class: "dropdown-item" %></li>
-          </ul>
+            <%= link_to "about", about_path, class: "nav-link active", aria_current: "page" %>
         </li>
 
         <% if logged_in? %>
           <li class="nav-item">
-            <%= link_to current_user.username, user_path(current_user), class: "nav-link active", aria_current: "page" %>
-          
+              <%= link_to "bloggers", users_path, class: "nav-link active", aria_current: "page" %>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              articles
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><%= link_to "New article", new_article_path, class: "dropdown-item" %></li>
+              <li><%= link_to "View articles", articles_path, class: "dropdown-item" %></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <% if current_user.admin? %>
+                <li><%= link_to "New category", new_category_path, class: "dropdown-item" %><li>
+              <% end %>
+              <li><%= link_to "View categories", categories_path, class: "dropdown-item" %></li>
+            </ul>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <%= "(Admin)" if current_user.admin? %> Profile [<%= current_user.username %>]
@@ -68,18 +54,14 @@
           </li>
         <% else %>
           <li class="nav-item">
-            <%= link_to "Log in", login_path, class: "nav-link active", aria_current: "page" %>
+            <%= link_to "log in", login_path, class: "nav-link active", aria_current: "page" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Sign up", signup_path, class: "nav-link active", aria_current: "page" %>
+            <%= link_to "sign up", signup_path, class: "nav-link active", aria_current: "page" %>
           </li>
         <% end %>
-        
+
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Comming soon!" aria-label="Search">
-        <button class="btn-mine-nav btn-alt" type="submit" title="Search feature comming soon!" >SEARCH</button>
-      </form>
     </div>
   </div>
 </nav>
