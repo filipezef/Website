@@ -33,4 +33,3 @@ App based on Rails 6 and ruby 2.7.4.1.
 
 
 Hosted by heroku -> https://zeferino.herokuapp.com/
-
