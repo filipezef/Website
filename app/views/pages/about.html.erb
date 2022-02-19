@@ -4,20 +4,28 @@
       <div class="bg-light p-5 rounded-lg" id="about-container">
         <div>
           <h2>Filipe Zeferino</h2>
-          <h6>Fond of technology, eager and dedicated to learn Software Engineering. I hope that through this website you can find some use for
-            my skills :)</h6>
-          <h6>Check what I covered so far on my learning journey and implementation (CRUD):</h6>
+          <h6>Fond of technology, eager for knowledge. I hope that through this website you can find use for
+            my skills <i class="bi bi-emoji-smile"></i></h6>
+          <h6 class="mt-4 mb-3">Check what I covered so far on my learning journey and implementation (CRUD):</h6>
           <%= link_to "front-end", front_end_path, class: "btn btn-primary m-1" %>
           <%= link_to "back-end", back_end_path, class: "btn btn-primary m-1" %>
           <%= link_to "CRUD", articles_path, class: "btn btn-success m-1" %>
-          <h6 class="mt-2">You can also check this website repository at &copy; <%= link_to "Github", "https://github.com/filipezef/zeferino-blog", target: :_blank %></h6>
+          <h6 class="mt-2">You can also check this website repo 
+            <%= link_to "https://github.com/filipezef/zeferino-blog", target: :_blank do %>
+              <i class="bi bi-folder-symlink-fill"></i>
+              <i class="bi bi-github"></i>
+            <% end %>
+          </h6>
         </div>
 
         <div class="mt-5">
           <h5>Background</h5>
           <h6>Electrical Engineer (UFSC/2010), currently coordinating the motor and electrical components subsystem at Nidec-GA/Embraco, Joinville.
-            Extensive experience with project coordination related to product change. You can dig in more at &copy; <%= link_to "linkedin",
-            "https://www.linkedin.com/in/filipezef", target: :_blank %>.</h6>
+            Extensive experience with project coordination related to product change. Dig in more <i class="bi bi-arrow-right"></i> 
+            <%= link_to "https://www.linkedin.com/in/filipezef/?locale=en_US", target: :_blank do %>
+              <i class="bi bi-linkedin"></i>
+            <% end %>
+            </h6>
         </div>
       </div>
     </div>
