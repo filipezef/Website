@@ -1,20 +1,18 @@
 <!--Navigation tag-->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-light">
-  <div class="container-fluid">
+  <div class="container">
     <%= link_to "ZefBlog", root_path, class: "navbar-brand", id: "logo", alt: "Z logo" %>
     <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-        <% if logged_in? %>
+      <% if logged_in? %>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
               <%= link_to "Bloggers", users_path, class: "nav-link active" %>
           </li>
-
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Articles
@@ -26,6 +24,7 @@
             </ul>
           </li>
 
+            <!-- Admin features -->
             <% if current_user.admin? %>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -36,7 +35,7 @@
                   <li><%= link_to "View categories", categories_path, class: "dropdown-item" %></li>
                 </ul>
               </li>
-            <% end %>
+            <% end %><!-- End of admin features -->
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,18 +47,13 @@
               <li><%= link_to "Delete Profile", user_path(current_user), class: "dropdown-item text-danger", method: :delete, data: { confirm: "Are you sure?" } %></li>
             </ul>
           </li>
+        </ul>
+        <ul class="navbar-nav ml-auto mb-lg-0">
+          <li class="nav-item">
             <%= link_to "Logout", logout_path, class: "btn btn-danger", method: :delete %>
           </li>
-        <% else %>
-          <li class="nav-item">
-            <%= link_to "Log in", login_path, class: "nav-link active" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Sign up", signup_path, class: "nav-link active" %>
-          </li>
-        <% end %>
-        
-      </ul>
+        </ul>
+      <% end %><!-- End of condition block logged_in? -->
     </div>
   </div>
 </nav>
